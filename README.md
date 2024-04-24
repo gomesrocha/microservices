@@ -2,6 +2,7 @@
 # Microsserviços
 
 Repository with information from my research on microservices
+Repositório com informações de minhas pesquisas sobre microsserviços
 
 ## Publications about microservices
 ## Publicações sobre microsserviços
