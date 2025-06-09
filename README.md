@@ -24,21 +24,10 @@ This repository gathers information, publications, and analyses related to micro
 
 # Análise Estatística sobre Pesquisas em Microsserviços com dados do Web of Science
 
-**📊 Análise Estatística dos Temas Mais Comuns**
-
-| Tema                               | Percentual Recalculado |
-|------------------------------------|-------------------------|
-| Microservice/Microservices         | **45,36%**              |
-| Aprendizado (Learning/ML)          | **15,46%**              |
-| Arquitetura (Architecture)         | **14,43%**              |
-| Cloud/Cloud Computing              | **10,31%**              |
-| Resiliência/Reconstruction         | **8,25%**               |
-| Big Data/Sistemas de grande volume | **6,19%**               |
-
 
 ---
 
-## 📈 Evolução Temporal da Área com dados do Web of Science
+## 📈 Evolução Temporal da Área
 
 A área de microsserviços tem sido em constante evolução:
 
@@ -51,7 +40,7 @@ A área de microsserviços tem sido em constante evolução:
 
 ---
 
-## 👨‍🔬 Autores de Referência com dados do Web of Science
+## 👨‍🔬 Autores de Referência
 
 - **Tomas Cerny** – 45 publicações  
 - **Davide Taibi** – 40 publicações  
@@ -61,13 +50,13 @@ A área de microsserviços tem sido em constante evolução:
 
 ---
 
-## ☁️ Wordcloud dos temas mais citados com dados do Web of Science
+## ☁️ Wordcloud dos temas mais citados
 
 ![Nuvem de Palavras](wordcloud.png)
 
 ---
 
-## 🔮 Tendências Futuras com dados do Web of Science
+## 🔮 Tendências Futuras
 
 - Integração de IA e ML em microserviços
 - Ênfase em segurança e resiliência
