@@ -9,6 +9,9 @@ Repositório com informações de minhas pesquisas sobre microsserviços
 ## Publications about microservices  
 ## Publicações sobre microsserviços
 
+- [Guidelines for the Application of Event Driven Architecture in Micro Services with High Volume of Data](https://www.scitepress.org/Papers/2025/133486/133486.pdf)
+- [Microservices Patterns Recommendation based on Information Retrieval](https://doi.org/10.3897/jucs.108974)
+- [Migration of monolithic systems to microservices:: A systematic mapping study](https://www.sciencedirect.com/science/article/pii/S0950584924001952)
 - [Understanding and Addressing the Allocation of Microservices into Containers: A Review](https://doi.org/10.1080/03772063.2023.2205864)
 - [Patterns in Microservices-based Development: A Grey Literature Review](https://doi.org/10.5753/cibse.2023.24693)
 - [Métricas Aplicadas a Microsserviços](https://doi.org/10.5753/sbqs_estendido.2023.235680)
