@@ -1,8 +1,9 @@
 # Microservices
 # Microsserviços
 
-Repository with information from my research on microservices  
-Repositório com informações de minhas pesquisas sobre microsserviços
+Este repositório reúne informações, publicações e análises relacionadas ao tema de microsserviços. Aqui você encontrará dados estatísticos, artigos publicados por mim e em parceria com outros pesquisadores, além de visualizações que ajudam a compreender a evolução e os focos de estudo na área.
+
+This repository gathers information, publications, and analyses related to microservices. It includes statistical insights, published articles authored by me and research partners, as well as visualizations to help understand the evolution and research trends in the field.
 
 ---
 
