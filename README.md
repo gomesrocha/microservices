@@ -36,7 +36,7 @@ A área de microsserviços tem sido em constante evolução:
 - **2016–2020**: foco em resiliência e big data
 - **2021–2023**: destaque em cloud e IA após pandemia
 
-![Gráfico de publicações por ano](grafico_publicacoes_por_ano.png)
+![Gráfico de publicações por ano](publicacoes_microservicos_animado.gif)
 
 ---
 
