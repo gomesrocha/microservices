@@ -22,7 +22,7 @@ This repository gathers information, publications, and analyses related to micro
 
 ---
 
-# Análise Estatística sobre Pesquisas em Microsserviços
+# Análise Estatística sobre Pesquisas em Microsserviços com dados do Web of Science
 
 **📊 Análise Estatística dos Temas Mais Comuns**
 
@@ -38,7 +38,7 @@ This repository gathers information, publications, and analyses related to micro
 
 ---
 
-## 📈 Evolução Temporal da Área
+## 📈 Evolução Temporal da Área com dados do Web of Science
 
 A área de microsserviços tem sido em constante evolução:
 
@@ -51,7 +51,7 @@ A área de microsserviços tem sido em constante evolução:
 
 ---
 
-## 👨‍🔬 Autores de Referência
+## 👨‍🔬 Autores de Referência com dados do Web of Science
 
 - **Tomas Cerny** – 45 publicações  
 - **Davide Taibi** – 40 publicações  
@@ -61,13 +61,13 @@ A área de microsserviços tem sido em constante evolução:
 
 ---
 
-## ☁️ Wordcloud dos temas mais citados
+## ☁️ Wordcloud dos temas mais citados com dados do Web of Science
 
 ![Nuvem de Palavras](wordcloud.png)
 
 ---
 
-## 🔮 Tendências Futuras
+## 🔮 Tendências Futuras com dados do Web of Science
 
 - Integração de IA e ML em microserviços
 - Ênfase em segurança e resiliência
