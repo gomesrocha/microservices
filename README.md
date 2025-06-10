@@ -29,7 +29,6 @@ This repository gathers information, publications, and analyses related to micro
 
 A área de microsserviços tem sido em constante evolução:
 
-- **2003–2010**: início das publicações
 - **2011–2015**: explosão de interesse
 - **2016–2020**: foco em resiliência e big data
 - **2021–2023**: destaque em cloud e IA após pandemia
