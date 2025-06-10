@@ -130,41 +130,50 @@ WebSocket é um protocolo assíncrono com canal bidirecional persistente. Após 
 
 ## 🧠 4. Padrões de Integração
 
-| Padrão               | Aplicação                                                                 |
-|----------------------|---------------------------------------------------------------------------|
-| **Circuit Breaker**  | Evita chamadas contínuas a serviços instáveis.                           |
-| **Retry/Timeout**    | Controla tentativas e tempo de espera.                                   |
-| **Bulkhead**         | Isola falhas e previne efeito cascata.                                   |
-| **Backpressure**     | Garante que consumidores não sejam sobrecarregados.                      |
-| **Service Discovery**| Descoberta dinâmica de serviços.                                         |
-| **API Composition**  | Agrega dados de múltiplos serviços.                                      |
-| **Backend for Frontend (BFF)** | API customizada por canal/cliente.                          |
+| Padrão                   | Aplicação                                                                 |
+|--------------------------|---------------------------------------------------------------------------|
+| **Saga**                 | Coordena transações distribuídas com consistência eventual.               |
+| **Circuit Breaker**      | Evita chamadas contínuas a serviços instáveis.                           |
+| **Retry/Timeout**        | Controla tentativas e tempo de espera.                                   |
+| **Bulkhead**             | Isola falhas e previne efeito cascata.                                   |
+| **Backpressure**         | Garante que consumidores não sejam sobrecarregados.                      |
+| **Service Discovery**    | Descoberta dinâmica de serviços.                                         |
+| **API Composition**      | Agrega dados de múltiplos serviços.                                      |
+| **Backend for Frontend** | API customizada por canal/cliente.                                       |
+
+## 🔄 Padrão Saga em Microsserviços
+
+O padrão **Saga** é utilizado para garantir a **consistência eventual** em sistemas distribuídos sem recorrer a transações distribuídas (2PC). Ele divide uma **transação longa** em uma sequência de **transações locais** coordenadas por mensagens, com **ações compensatórias** para desfazer efeitos em caso de falhas.
+
+### 🧠 Benefícios do uso de Saga
+
+- Evita o uso de transações distribuídas complexas e custosas.
+- Melhora a resiliência e escalabilidade do sistema.
+- Permite flexibilidade na gestão de falhas e compensações.
+- Fortalece a consistência eventual entre microsserviços.
 
 ---
 
-## 🔍 Palavras-chave para Pesquisa Acadêmica
+### 🧭 Tipos de Saga
 
-### Em Português
-- "Comunicação entre microsserviços"
-- "Padrões de integração de sistemas distribuídos"
-- "Microsserviços e mensageria assíncrona"
-- "gRPC versus REST em microsserviços"
-- "Arquitetura orientada a eventos"
-- "Comparação de formatos de dados JSON e Protobuf"
-- "Desempenho de APIs REST, GraphQL e gRPC"
-- "Service Mesh e comunicação entre microsserviços"
+| Tipo           | Características                                                             | Quando Usar                                      |
+|----------------|------------------------------------------------------------------------------|--------------------------------------------------|
+| **Orquestrada**| Um orquestrador central controla o fluxo da saga, enviando comandos e recebendo respostas. | Quando há necessidade de controle e visibilidade centralizada. |
+| **Coreografada**| Cada serviço reage a eventos e publica novos eventos para os próximos.     | Quando se deseja baixo acoplamento e autonomia entre serviços. |
 
-### Em Inglês
-- "Microservices communication patterns"
-- "Synchronous vs asynchronous communication in microservices"
-- "gRPC vs REST performance comparison"
-- "Event-driven microservices architecture"
-- "Message formats in distributed systems: JSON, XML, Protobuf"
-- "API Gateway and service mesh in microservices"
-- "Backend for Frontend (BFF) in microservice architecture"
-- "Communication protocols in cloud-native systems"
-- "Interoperability and integration in microservices"
-- "Microservice orchestration and choreography"
+---
 
+### 🔧 Exemplo: Saga Orquestrada
+
+```text
+[Orquestrador]
+   ↓ cria ordem
+[Serviço de Pedido]
+   ↓ reserva estoque
+[Serviço de Estoque]
+   ↓ solicita pagamento
+[Serviço de Pagamento]
+   ↓ confirma pedido
+[Serviço de Pedido]
 ---
 
