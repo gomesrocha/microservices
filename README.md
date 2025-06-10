@@ -1,5 +1,4 @@
-# Microservices
-# Microsserviços
+# Microservices - Microsserviços
 
 Este repositório reúne informações, publicações e análises relacionadas ao tema de microsserviços. Aqui você encontrará dados estatísticos, artigos publicados por mim e em parceria com outros pesquisadores, além de visualizações que ajudam a compreender a evolução e os focos de estudo na área.
 
@@ -7,8 +6,7 @@ This repository gathers information, publications, and analyses related to micro
 
 ---
 
-## Publications about microservices  
-## Publicações sobre microsserviços
+## Publications about microservices - Publicações sobre microsserviços
 
 - [Guidelines for the Application of Event Driven Architecture in Micro Services with High Volume of Data](https://www.scitepress.org/Papers/2025/133486/133486.pdf)
 - [Microservices Patterns Recommendation based on Information Retrieval](https://doi.org/10.3897/jucs.108974)
