@@ -6,7 +6,7 @@ This repository gathers information, publications, and analyses related to micro
 
 ---
 
-## Publications about microservices - Publicações sobre microsserviços
+## My publications about microservices - Minhas publicações sobre microsserviços
 
 - [Guidelines for the Application of Event Driven Architecture in Micro Services with High Volume of Data](https://www.scitepress.org/Papers/2025/133486/133486.pdf)
 - [Microservices Patterns Recommendation based on Information Retrieval](https://doi.org/10.3897/jucs.108974)
