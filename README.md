@@ -63,6 +63,15 @@ A área de microsserviços tem sido em constante evolução:
 ---
 # 📘 Catálogo de Padrões de Comunicação em Microsserviços
 
+A definição de padrões de comunicação entre microsserviços é um fator crítico no sucesso da migração de sistemas monolíticos para arquiteturas baseadas em microsserviços. Em aplicações monolíticas, a comunicação entre componentes ocorre por meio de chamadas internas de métodos ou funções, enquanto em arquiteturas distribuídas essa comunicação exige o uso de tecnologias de **comunicação entre processos**, como REST, gRPC, mensageria ou eventos. Segundo Kazanavicius e Mazeika (2023), um dos maiores desafios durante esse processo de decomposição é justamente **a escolha adequada da tecnologia de comunicação**, uma vez que cada abordagem possui vantagens e limitações específicas, como latência, resiliência e acoplamento ([link](https://www.cai.sk/ojs/index.php/cai/article/view/2023_1_1)).
+
+No contexto da indústria de e-commerce, Gördesli e Varol (2022) reforçam que, embora os microsserviços tragam benefícios como escalabilidade e tolerância a falhas, **a eficiência e a robustez da comunicação entre os serviços é um ponto sensível**, sendo necessário analisar o impacto de abordagens síncronas, como REST, em comparação com modelos assíncronos baseados em eventos ([link](https://ieeexplore-ieee-org.ez20.periodicos.capes.gov.br/document/9800784/)).
+
+Complementarmente, Dai et al. (2020) destacam que a análise das interações entre microsserviços torna-se complexa devido à diversidade e volume de comunicações assíncronas, além da presença de buffers não limitados. Os autores propõem o uso de técnicas formais de verificação, como Labeled Transition Systems (LTSs) e model checking, para **garantir a correção das interações e evitar falhas de comunicação**, evidenciando a necessidade de padrões bem definidos nesse ecossistema ([link](https://onlinelibrary.wiley.com/doi/10.1155/2020/2128793)).
+
+Dessa forma, **compreender as diferenças entre comunicação síncrona e assíncrona, os protocolos envolvidos (como HTTP, gRPC, WebSocket, AMQP, Kafka) e os padrões arquiteturais associados (como API Gateway, Service Mesh, Saga e Event-Driven Architecture)** é essencial para a construção de sistemas distribuídos eficazes, resilientes e escaláveis. Tais escolhas impactam diretamente no desempenho, na coesão dos serviços e na capacidade do sistema evoluir de forma sustentável.
+
+
 ## 🧩 1. Comunicação Entre Microsserviços
 
 ### 1.1 Estilos de Comunicação
@@ -97,6 +106,9 @@ WebSocket é um protocolo assíncrono com canal bidirecional persistente. Após 
 | **Event-Driven**         | Comunicação por meio de eventos.                                         |
 | **Request/Reply**        | Comunicação direta com espera por resposta.                              |
 | **Publisher/Subscriber** | Um serviço publica e vários podem assinar.                               |
+
+#### 🔍 Catalogo de padrões
+O arquiteto de software **Chris Richardson**, autor do livro *Microservices Patterns*, mantém o site [microservices.io](https://microservices.io/), que reúne um **catálogo abrangente de padrões arquiteturais para microsserviços**. O site apresenta soluções consolidadas para desafios comuns no desenvolvimento e operação de sistemas distribuídos, incluindo padrões de decomposição, integração, comunicação, consistência de dados, observabilidade e segurança. É uma referência amplamente reconhecida na comunidade de arquitetura de software e recomendada para profissionais e pesquisadores da área.
 
 ---
 
